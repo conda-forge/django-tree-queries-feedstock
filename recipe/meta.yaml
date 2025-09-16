@@ -1,5 +1,5 @@
 {% set name = "django-tree-queries" %}
-{% set version = "0.20.0" %}
+{% set version = "0.21.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/django_tree_queries-{{ version }}.tar.gz
-  sha256: 5439d8bf9f4eafab66175d23ddd4e0a639b1be47cfc357561ff740ef7b6f4df3
+  sha256: db2d97728354fca0a40b5e9118c2ff9ab5187abfc9fc54680af89d911b0ec1da
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     - hatchling
     - pip
   run:
+    - django-js-asset
     - django
     - python >={{ python_min }}
 
