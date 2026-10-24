@@ -1,5 +1,5 @@
 {% set name = "django-tree-queries" %}
-{% set version = "0.27.0" %}
+{% set version = "0.28.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/django_tree_queries-{{ version }}.tar.gz
-  sha256: 349a4ea43fb1b2e9cc04ecab3afe908991e6210b46f6d05004f01400b13b2d1c
+  sha256: 6206f0690962177337456c80961c3dbac1d689e95893a0a3551b98f85bd89f22
 
 build:
   noarch: python
